@@ -1,9 +1,7 @@
 name: Build
 
-on:
-  release:
-    types: [created]
-    
+on: [push]
+
 jobs:
   Linux:
     runs-on: ubuntu-latest
