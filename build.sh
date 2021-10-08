@@ -2,7 +2,7 @@
 
 export OUTPUT_DIR="openarena-0.8.8"
 
-pushd openarena-ioq3
+cd openarena-ioq3
 ARCH=x86_64 make
 PLATFORM=mingw64 ARCH=x86_64 make
 ARCH=x86 make
@@ -31,7 +31,7 @@ cp build/release-mingw64-x86/renderer_opengl1_x86.dll ../$OUTPUT_DIR/
 cp build/release-mingw64-x86/renderer_opengl2_x86.dll ../$OUTPUT_DIR/
 cp build/release-mingw64-x86/SDL2.dll ../$OUTPUT_DIR/
 
-popd
+cd ..
 
 echo $OUTPUT_DIR
 

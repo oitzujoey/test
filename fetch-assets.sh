@@ -7,11 +7,12 @@ if [ ! -d "openarena-0.8.8" ]; then
 		echo "Found OpenArena assets zip."
 	fi
 	unzip openarena-assets.zip
-	pushd openarena-0.8.8
+	cd openarena-0.8.8
 	rm oa_ded.*
 	rm openarena.*
 	rm SDL.dll
 	rm lib*
+	cd ..
 else
 	echo "Found OpenArena assets."
 fi
